@@ -89,6 +89,16 @@ def trasponer(m):
 
 def resolver_laberinto(maze):
     N = len(maze)
+    maze = [
+    [0, 1, 0, 1, 1, 0, 1, 0],
+    [0, 0, 0, 1, 0, 1, 0, 1],
+    [1, 0, 1, 1, 0, 1, 0, 1],
+    [0, 0, 1, 0, 0, 0, 1, 0],
+    [1, 0, 1, 1, 1, 1, 0, 1],
+    [1, 1, 0, 1, 0, 1, 0, 0],
+    [1, 1, 0, 1, 1, 1, 1, 0],
+    [1, 0, 0, 1, 0, 0, 1, 1]
+    ]
     MatrizSolucion = [[0] * N for _ in range(N)]   # lista para almacenar la matriz solucion
     def solvemaze(r, c):  # r - row, c - columns
         if (r == N - 1) and (c == N - 1):  # destino de la ultima celda(maze[SIZE-1][SIZE-1])
